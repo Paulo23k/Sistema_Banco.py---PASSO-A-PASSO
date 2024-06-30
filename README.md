@@ -18,13 +18,9 @@ Use print(menu) para exibir o menu.
 Exemplo de Código:
 Python
 
-menu = """
-[d] Depositar
-[s] Sacar
-[e] Extrato
-[q] Sair
-=> """
-print(menu)
+![image](https://github.com/Paulo23k/Sistema_Banco.py---PASSO-A-PASSO/assets/143550827/44f2188b-7ef2-402b-8404-a867bcaf4341)
+
+
 
 # Passo 2: Configuração das Variáveis Iniciais #
 Objetivo: Definir variáveis para armazenar o saldo, limite de saque, extrato e contador de saques.
@@ -33,11 +29,8 @@ Crie variáveis saldo, limite, extrato, numero_saques, e LIMITE_SAQUES com valor
 Exemplo de Código:
 Python
 
-saldo = 0
-limite = 500
-extrato = ""
-numero_saques = 0
-LIMITE_SAQUES = 3
+![image](https://github.com/Paulo23k/Sistema_Banco.py---PASSO-A-PASSO/assets/143550827/145ec439-f48b-4163-9901-8316dce6a2b8)
+
 
 # Passo 3: Loop Principal do Programa #
 Objetivo: Criar um loop que permita ao usuário selecionar opções até decidir sair.
@@ -48,11 +41,8 @@ Adicione uma condição para sair do loop se o usuário escolher a opção q.
 Exemplo de Código:
 Python
 
-while True:
-    opcao = input(menu).lower()
-    if opcao == "q":
-        print("Obrigado por utilizar nosso sistema")
-        break
+![image](https://github.com/Paulo23k/Sistema_Banco.py---PASSO-A-PASSO/assets/143550827/99098b92-65b9-4992-8fc3-f197835c4bd4)
+
         
 # Passo 4: Implementação da Função de Depósito #
 Objetivo: Permitir que o usuário deposite dinheiro na conta.
@@ -63,13 +53,8 @@ Registre a operação no extrato.
 Exemplo de Código:
 Python
 
-if opcao == "d":
-    valor = float(input("Informe o valor do depósito: "))
-    if valor > 0:
-        saldo += valor
-        extrato += f"Depósito: R$ {valor:.2f}\n"
-    else:
-        print("Operação falhou! O valor informado é inválido.")
+![image](https://github.com/Paulo23k/Sistema_Banco.py---PASSO-A-PASSO/assets/143550827/7e16a247-81e5-44fd-a48c-cfb50fd4c0f6)
+
         
 # Passo 5: Implementação da Função de Saque #
 Objetivo: Permitir que o usuário saque dinheiro da conta.
@@ -80,20 +65,8 @@ Subtraia o valor do saldo e registre a operação no extrato.
 Exemplo de Código:
 Python
 
-if opcao == "s":
-    valor = float(input("Informe o valor do saque: "))
-    if valor > saldo:
-        print("Operação falhou! Você não tem saldo suficiente.")
-    elif valor > limite:
-        print("Operação falhou! O valor do saque excede o limite.")
-    elif numero_saques >= LIMITE_SAQUES:
-        print("Operação falhou! Número máximo de saques excedido.")
-    elif valor > 0:
-        saldo -= valor
-        extrato += f"Saque: R$ {valor:.2f}\n"
-        numero_saques += 1
-    else:
-        print("Operação falhou! O valor informado é inválido.")
+![image](https://github.com/Paulo23k/Sistema_Banco.py---PASSO-A-PASSO/assets/143550827/d0c73472-adb9-4d48-abec-5fc90ab05ff8)
+
         
 # Passo 6: Implementação da Função de Extrato #
 Objetivo: Exibir o extrato das transações e o saldo atual.
@@ -103,11 +76,8 @@ Exiba o saldo atual formatado.
 Exemplo de Código:
 Python
 
-if opcao == "e":
-    print("\n================ EXTRATO ================")
-    print("Não foram realizadas movimentações." if not extrato else extrato)
-    print(f"\nSaldo: R$ {saldo:.2f}")
-    print("==========================================")
+![image](https://github.com/Paulo23k/Sistema_Banco.py---PASSO-A-PASSO/assets/143550827/855bbed9-fe8e-4f99-a8b1-58b6ee0e55f1)
+
     
 # Teste o Programa #
 Objetivo: Garantir que todas as funcionalidades estão funcionando corretamente.
