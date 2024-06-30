@@ -12,7 +12,9 @@ Um editor de texto ou IDE (como Visual Studio Code, PyCharm, etc.)
 Passos
 # Passo 1: Criação do Menu de Opções #
 Objetivo: Exibir um menu com opções para o usuário.
+
 *Instruções:*
+
 Crie uma variável menu que contém o texto do menu.
 Use print(menu) para exibir o menu.
 Exemplo de Código:
@@ -24,7 +26,9 @@ Python
 
 # Passo 2: Configuração das Variáveis Iniciais #
 Objetivo: Definir variáveis para armazenar o saldo, limite de saque, extrato e contador de saques.
+
 *Instruções:*
+
 Crie variáveis saldo, limite, extrato, numero_saques, e LIMITE_SAQUES com valores iniciais.
 Exemplo de Código:
 Python
@@ -34,7 +38,9 @@ Python
 
 # Passo 3: Loop Principal do Programa #
 Objetivo: Criar um loop que permita ao usuário selecionar opções até decidir sair.
+
 *Instruções:*
+
 Use while True para criar um loop infinito.
 Dentro do loop, exiba o menu e leia a opção escolhida pelo usuário.
 Adicione uma condição para sair do loop se o usuário escolher a opção q.
@@ -46,7 +52,9 @@ Python
         
 # Passo 4: Implementação da Função de Depósito #
 Objetivo: Permitir que o usuário deposite dinheiro na conta.
+
 *Instruções:*
+
 Peça ao usuário o valor do depósito.
 Verifique se o valor é positivo e adicione ao saldo.
 Registre a operação no extrato.
@@ -58,7 +66,9 @@ Python
         
 # Passo 5: Implementação da Função de Saque #
 Objetivo: Permitir que o usuário saque dinheiro da conta.
+
 *Instruções:*
+
 Peça ao usuário o valor do saque.
 Verifique se o valor é positivo, se não excede o saldo, o limite de saque e o número de saques permitidos.
 Subtraia o valor do saldo e registre a operação no extrato.
@@ -70,7 +80,9 @@ Python
         
 # Passo 6: Implementação da Função de Extrato #
 Objetivo: Exibir o extrato das transações e o saldo atual.
+
 *Instruções:*
+
 Verifique se houve movimentações e exiba o extrato ou uma mensagem padrão.
 Exiba o saldo atual formatado.
 Exemplo de Código:
@@ -81,7 +93,9 @@ Python
     
 # Teste o Programa #
 Objetivo: Garantir que todas as funcionalidades estão funcionando corretamente.
-Instruções:
+
+*Instruções:*
+
 Execute o programa.
 Realize depósitos, saques e exiba o extrato para verificar se tudo está funcionando como esperado.
 Faça ajustes se necessário.
