@@ -10,7 +10,7 @@ Python instalado no computador
 Um editor de texto ou IDE (como Visual Studio Code, PyCharm, etc.)
 
 Passos
-# Passo 1: Criação do Menu de Opções
+# Passo 1: Criação do Menu de Opções #
 Objetivo: Exibir um menu com opções para o usuário.
 *Instruções:*
 Crie uma variável menu que contém o texto do menu.
@@ -26,7 +26,7 @@ menu = """
 => """
 print(menu)
 
-# Passo 2: Configuração das Variáveis Iniciais
+# Passo 2: Configuração das Variáveis Iniciais #
 Objetivo: Definir variáveis para armazenar o saldo, limite de saque, extrato e contador de saques.
 *Instruções:*
 Crie variáveis saldo, limite, extrato, numero_saques, e LIMITE_SAQUES com valores iniciais.
@@ -39,7 +39,7 @@ extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
 
-# Passo 3: Loop Principal do Programa
+# Passo 3: Loop Principal do Programa #
 Objetivo: Criar um loop que permita ao usuário selecionar opções até decidir sair.
 *Instruções:*
 Use while True para criar um loop infinito.
@@ -54,7 +54,7 @@ while True:
         print("Obrigado por utilizar nosso sistema")
         break
         
-# Passo 4: Implementação da Função de Depósito
+# Passo 4: Implementação da Função de Depósito #
 Objetivo: Permitir que o usuário deposite dinheiro na conta.
 *Instruções:*
 Peça ao usuário o valor do depósito.
@@ -71,7 +71,7 @@ if opcao == "d":
     else:
         print("Operação falhou! O valor informado é inválido.")
         
-# Passo 5: Implementação da Função de Saque
+# Passo 5: Implementação da Função de Saque #
 Objetivo: Permitir que o usuário saque dinheiro da conta.
 *Instruções:*
 Peça ao usuário o valor do saque.
@@ -95,7 +95,7 @@ if opcao == "s":
     else:
         print("Operação falhou! O valor informado é inválido.")
         
-# Passo 6: Implementação da Função de Extrato
+# Passo 6: Implementação da Função de Extrato #
 Objetivo: Exibir o extrato das transações e o saldo atual.
 *Instruções:*
 Verifique se houve movimentações e exiba o extrato ou uma mensagem padrão.
@@ -109,7 +109,7 @@ if opcao == "e":
     print(f"\nSaldo: R$ {saldo:.2f}")
     print("==========================================")
     
-# Teste o Programa
+# Teste o Programa #
 Objetivo: Garantir que todas as funcionalidades estão funcionando corretamente.
 Instruções:
 Execute o programa.
